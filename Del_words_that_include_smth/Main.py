@@ -1,10 +1,9 @@
 subtxt = 'абв'
 
-txt = input('Введите текст: ')
-txt.split()
-index = txt.find(subtxt)
-if index >= 0:
+txt = 'Абвер стал называть алфавит абвгдейкой'
+print(txt)
 
-else:
-    print()
-    
+lst = txt.lower().split()
+new_txt =' '.join([i for i in lst if not subtxt in i])
+
+print(new_txt)
