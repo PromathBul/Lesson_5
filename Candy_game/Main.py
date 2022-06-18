@@ -62,7 +62,6 @@ def Player_vs_bot (candies, max_move, intel):
                     move = randint(1, max_move)
                 else:
                     move = candies - max_move * (candies // max_move) - 1
-                    print(f'кратность {candies//max_move}')
                     if move <= 0:
                         move += max_move
             print(f'Бот забрал {move} конфет.')
@@ -77,7 +76,6 @@ def Player_vs_bot (candies, max_move, intel):
                     move = randint(1, max_move)
                 else:
                     move = candies - max_move * (candies // max_move) - 1
-                    print(f'кратность {candies//max_move}')
                     if move <= 0:
                         move += max_move
             print(f'Бот забрал {move} конфет.')
